@@ -1,6 +1,6 @@
 <?php
-define('APP_ID', 'wx6f81e35c0534ea90');
-define('APP_SECRET', 'b816de1db85cc64f8980709bbaf80538');
+define('APP_ID', '');
+define('APP_SECRET', '');
 
 /**
  * 网页授权获取用户信息，与cgi不同
