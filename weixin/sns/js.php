@@ -14,10 +14,10 @@
             $(document).ready(function () {
                wx.config({
                     debug: false,
-                    appId: '<?php echo $sign_package["appId"]; ?>',
-                    timestamp: <?php echo $sign_package["timestamp"]; ?>,
-                    nonceStr: '<?php echo $sign_package["nonceStr"]; ?>',
-                    signature: '<?php echo $sign_package["signature"]; ?>',
+                    appId: '<?php echo $sign_package['appId']; ?>',
+                    timestamp: <?php echo $sign_package['timestamp']; ?>,
+                    nonceStr: '<?php echo $sign_package['nonceStr']; ?>',
+                    signature: '<?php echo $sign_package['signature']; ?>',
                     jsApiList: [
                         'onMenuShareTimeline',
                         'onMenuShareAppMessage'
