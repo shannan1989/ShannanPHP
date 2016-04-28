@@ -42,6 +42,11 @@ class WeixinChat {
         die;
     }
 
+    /**
+     * 处理event类型的消息
+     * @param object $objReceived
+     * @return string
+     */
     private function receiveEvent($objReceived) {
         $strResponse = '';
         switch ($objReceived->Event) {
@@ -146,7 +151,11 @@ class WeixinChat {
         return $s1;
     }
 
-    //生成带自定义场景值（int）的公众号二维码
+    /**
+     * 生成带自定义场景值的公众号二维码
+     * @param int $scene_id
+     * @return array
+     */
     public function createQrcode($scene_id) {
         $access_token = $this->getAccessToken();
         $api_url = 'https://api.weixin.qq.com/cgi-bin/qrcode/create?access_token=' . $access_token;
