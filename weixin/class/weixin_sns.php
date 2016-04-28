@@ -8,7 +8,7 @@ define('APP_SECRET', '');
 class WeixinSns {
 
     static function getAccessToken($code) {
-        $url = 'https://api.weixin.qq.com/sns/oauth2/access_token?code=' . $code . '&grant_type=authorization_code&appid=' . APP_ID . "&secret=" . APP_SECRET;
+        $url = 'https://api.weixin.qq.com/sns/oauth2/access_token?code=' . $code . '&grant_type=authorization_code&appid=' . APP_ID . '&secret=' . APP_SECRET;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1);
