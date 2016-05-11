@@ -10,4 +10,10 @@ function load() {
     return $rc->newInstanceArgs($args);
 }
 
+function _shutdown() {
+    
+}
+
 spl_autoload_register('_autoload');
+
+register_shutdown_function('_shutdown');
